@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ffc55e38ecc795ca0d84e60cfe42c015 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ffc55e38ecc795ca0d84e60cfe42c015" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ffc55e38ecc795ca0d84e60cfe42c015 = L.map(
+                "map_ffc55e38ecc795ca0d84e60cfe42c015",
+                {
+                    center: [35.13, 126.83],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_42efa6d06fe01f4280028eaf229121aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_42efa6d06fe01f4280028eaf229121aa.addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+            var circle_marker_2887552c7c428e85daf8fed75654b34c = L.circleMarker(
+                [35.1739175430866, 126.911235470135],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_be368a2ec9d9478e324f77979e774596 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae8d26d9563fd853f9693610b1e8adff = $(`<div id="html_ae8d26d9563fd853f9693610b1e8adff" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> atti-C 2023점<br>     <b>주소:</b> 광주광역시 북구 용봉로 77 (용봉동, 전남대학교) .<br>     <b>전화번호:</b> 062-530-0040     </div>`)[0];
+                popup_be368a2ec9d9478e324f77979e774596.setContent(html_ae8d26d9563fd853f9693610b1e8adff);
+            
+        
+
+        circle_marker_2887552c7c428e85daf8fed75654b34c.bindPopup(popup_be368a2ec9d9478e324f77979e774596)
+        ;
+
+        
+    
+    
+            circle_marker_2887552c7c428e85daf8fed75654b34c.bindTooltip(
+                `<div>
+                     
+    매장명: atti-C 2023점<br>
+    주소: 광주광역시 북구 용봉로 77 (용봉동, 전남대학교) .<br>
+    전화번호: 062-530-0040
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65b64f03b029c20e4d3372bebcde7c83 = L.circleMarker(
+                [35.1495938814346, 126.850577941562],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_83e928029695a4d772a2a92807dc4295 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f369b41d3986f53830bc2102c79e64bc = $(`<div id="html_f369b41d3986f53830bc2102c79e64bc" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주상무점<br>     <b>주소:</b> 광주광역시 서구 상무연하로 16 (치평동, 스마일빌딩) 1층 109호<br>     <b>전화번호:</b> 062-371-7778     </div>`)[0];
+                popup_83e928029695a4d772a2a92807dc4295.setContent(html_f369b41d3986f53830bc2102c79e64bc);
+            
+        
+
+        circle_marker_65b64f03b029c20e4d3372bebcde7c83.bindPopup(popup_83e928029695a4d772a2a92807dc4295)
+        ;
+
+        
+    
+    
+            circle_marker_65b64f03b029c20e4d3372bebcde7c83.bindTooltip(
+                `<div>
+                     
+    매장명: 광주상무점<br>
+    주소: 광주광역시 서구 상무연하로 16 (치평동, 스마일빌딩) 1층 109호<br>
+    전화번호: 062-371-7778
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e247f6dbce79d41df160c38f8edf97f0 = L.circleMarker(
+                [35.1848529560288, 126.871003429729],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_265341de8036838a08aba598853bde01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c95a279c29c6d68b9e4bebd4fb2333c4 = $(`<div id="html_c95a279c29c6d68b9e4bebd4fb2333c4" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주운암점<br>     <b>주소:</b> 광주광역시 북구 북문대로 184 (운암동) .<br>     <b>전화번호:</b> 062-531-7711     </div>`)[0];
+                popup_265341de8036838a08aba598853bde01.setContent(html_c95a279c29c6d68b9e4bebd4fb2333c4);
+            
+        
+
+        circle_marker_e247f6dbce79d41df160c38f8edf97f0.bindPopup(popup_265341de8036838a08aba598853bde01)
+        ;
+
+        
+    
+    
+            circle_marker_e247f6dbce79d41df160c38f8edf97f0.bindTooltip(
+                `<div>
+                     
+    매장명: 광주운암점<br>
+    주소: 광주광역시 북구 북문대로 184 (운암동) .<br>
+    전화번호: 062-531-7711
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07e12d99bfefde1edae3cf81fbe2177e = L.circleMarker(
+                [35.1734482268187, 126.913254419092],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_ddf688d9f3f4554e2d11ffa881952bb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_317c4b2b63cfe8afa8d720924c6decae = $(`<div id="html_317c4b2b63cfe8afa8d720924c6decae" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주북구청점<br>     <b>주소:</b> 광주광역시 북구 서방로 2 .<br>     <b>전화번호:</b> 062-511-8002     </div>`)[0];
+                popup_ddf688d9f3f4554e2d11ffa881952bb4.setContent(html_317c4b2b63cfe8afa8d720924c6decae);
+            
+        
+
+        circle_marker_07e12d99bfefde1edae3cf81fbe2177e.bindPopup(popup_ddf688d9f3f4554e2d11ffa881952bb4)
+        ;
+
+        
+    
+    
+            circle_marker_07e12d99bfefde1edae3cf81fbe2177e.bindTooltip(
+                `<div>
+                     
+    매장명: 광주북구청점<br>
+    주소: 광주광역시 북구 서방로 2 .<br>
+    전화번호: 062-511-8002
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4ea85745575a3e66b1d284c4fb4aaea = L.circleMarker(
+                [35.191396128787, 126.828097547991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_4dd4d1484513e4a956fa37a8722bb740 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63d3421d4e265271044ecb8a4e7d60d1 = $(`<div id="html_63d3421d4e265271044ecb8a4e7d60d1" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주수완2호점<br>     <b>주소:</b> 광주광역시 광산구 수완로 73번길 7, 1층 (수완동)  .<br>     <b>전화번호:</b> 062-959-3327     </div>`)[0];
+                popup_4dd4d1484513e4a956fa37a8722bb740.setContent(html_63d3421d4e265271044ecb8a4e7d60d1);
+            
+        
+
+        circle_marker_e4ea85745575a3e66b1d284c4fb4aaea.bindPopup(popup_4dd4d1484513e4a956fa37a8722bb740)
+        ;
+
+        
+    
+    
+            circle_marker_e4ea85745575a3e66b1d284c4fb4aaea.bindTooltip(
+                `<div>
+                     
+    매장명: 광주수완2호점<br>
+    주소: 광주광역시 광산구 수완로 73번길 7, 1층 (수완동)  .<br>
+    전화번호: 062-959-3327
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85ad102f67bebba7c92ee9f227dfe4f0 = L.circleMarker(
+                [35.20561500305231, 126.89888999764592],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_1da2633dab1d692e58db58ed15a8403a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6dc9ef92d06b4d1f4f756c6d4896e55 = $(`<div id="html_f6dc9ef92d06b4d1f4f756c6d4896e55" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주일곡점<br>     <b>주소:</b> 광주광역시 북구 송해로 81 1~3층 /일곡동 821-5<br>     <b>전화번호:</b> 070-7716-0123     </div>`)[0];
+                popup_1da2633dab1d692e58db58ed15a8403a.setContent(html_f6dc9ef92d06b4d1f4f756c6d4896e55);
+            
+        
+
+        circle_marker_85ad102f67bebba7c92ee9f227dfe4f0.bindPopup(popup_1da2633dab1d692e58db58ed15a8403a)
+        ;
+
+        
+    
+    
+            circle_marker_85ad102f67bebba7c92ee9f227dfe4f0.bindTooltip(
+                `<div>
+                     
+    매장명: 광주일곡점<br>
+    주소: 광주광역시 북구 송해로 81 1~3층 /일곡동 821-5<br>
+    전화번호: 070-7716-0123
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edf4eedf4cc21083fccd0f992f5c4257 = L.circleMarker(
+                [35.16245694741868, 126.81243352386942],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_ca84cf020e4832f3d5dbd6b2726a7e08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d235f8db30cb146d9a5e6b463056cd73 = $(`<div id="html_d235f8db30cb146d9a5e6b463056cd73" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주우산점<br>     <b>주소:</b> 광주광역시 광산구 풍영철길로 12 1~2층<br>     <b>전화번호:</b> 062-956-6582     </div>`)[0];
+                popup_ca84cf020e4832f3d5dbd6b2726a7e08.setContent(html_d235f8db30cb146d9a5e6b463056cd73);
+            
+        
+
+        circle_marker_edf4eedf4cc21083fccd0f992f5c4257.bindPopup(popup_ca84cf020e4832f3d5dbd6b2726a7e08)
+        ;
+
+        
+    
+    
+            circle_marker_edf4eedf4cc21083fccd0f992f5c4257.bindTooltip(
+                `<div>
+                     
+    매장명: 광주우산점<br>
+    주소: 광주광역시 광산구 풍영철길로 12 1~2층<br>
+    전화번호: 062-956-6582
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e21d8f2d668e534f5cbee44ca8cead4 = L.circleMarker(
+                [35.1779015334461, 126.820722429376],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_0b0f5a6231ac0961076131c9dd6d3a8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b68d0f1bd730f811879973f514e8ab47 = $(`<div id="html_b68d0f1bd730f811879973f514e8ab47" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주운남점<br>     <b>주소:</b> 광주광역시 광산구 하남대로 248-13 (운남동 771-3 ) 대영빌딩 1층<br>     <b>전화번호:</b> 062-951-5979     </div>`)[0];
+                popup_0b0f5a6231ac0961076131c9dd6d3a8f.setContent(html_b68d0f1bd730f811879973f514e8ab47);
+            
+        
+
+        circle_marker_8e21d8f2d668e534f5cbee44ca8cead4.bindPopup(popup_0b0f5a6231ac0961076131c9dd6d3a8f)
+        ;
+
+        
+    
+    
+            circle_marker_8e21d8f2d668e534f5cbee44ca8cead4.bindTooltip(
+                `<div>
+                     
+    매장명: 광주운남점<br>
+    주소: 광주광역시 광산구 하남대로 248-13 (운남동 771-3 ) 대영빌딩 1층<br>
+    전화번호: 062-951-5979
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7accb9f6335ecd4a2ed547a072e57dc5 = L.circleMarker(
+                [35.217256236376, 126.84265735783],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_f75180ac6608da5552dea08c777d3521 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da4df5ee78cc73c75c40db2d801c797e = $(`<div id="html_da4df5ee78cc73c75c40db2d801c797e" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주첨단점<br>     <b>주소:</b> 광주광역시 광산구 첨단중앙로 136 1층 .<br>     <b>전화번호:</b> 062-434-0200     </div>`)[0];
+                popup_f75180ac6608da5552dea08c777d3521.setContent(html_da4df5ee78cc73c75c40db2d801c797e);
+            
+        
+
+        circle_marker_7accb9f6335ecd4a2ed547a072e57dc5.bindPopup(popup_f75180ac6608da5552dea08c777d3521)
+        ;
+
+        
+    
+    
+            circle_marker_7accb9f6335ecd4a2ed547a072e57dc5.bindTooltip(
+                `<div>
+                     
+    매장명: 광주첨단점<br>
+    주소: 광주광역시 광산구 첨단중앙로 136 1층 .<br>
+    전화번호: 062-434-0200
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37416b8110f18bd4307c418fb5a95f66 = L.circleMarker(
+                [35.1467262726749, 126.917533760044],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_b66e8e9a957cf4e66c5feae0626a695a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0af8fc0db905b68a33e852a549a70d96 = $(`<div id="html_0af8fc0db905b68a33e852a549a70d96" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주충장로점<br>     <b>주소:</b> 광주광역시 동구 충장로안길 43 충장로1가 23<br>     <b>전화번호:</b> 062-223-0688     </div>`)[0];
+                popup_b66e8e9a957cf4e66c5feae0626a695a.setContent(html_0af8fc0db905b68a33e852a549a70d96);
+            
+        
+
+        circle_marker_37416b8110f18bd4307c418fb5a95f66.bindPopup(popup_b66e8e9a957cf4e66c5feae0626a695a)
+        ;
+
+        
+    
+    
+            circle_marker_37416b8110f18bd4307c418fb5a95f66.bindTooltip(
+                `<div>
+                     
+    매장명: 광주충장로점<br>
+    주소: 광주광역시 동구 충장로안길 43 충장로1가 23<br>
+    전화번호: 062-223-0688
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efc09ca6012003ee4b9486c4bec47e83 = L.circleMarker(
+                [35.1403652657332, 126.834131348327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ffc55e38ecc795ca0d84e60cfe42c015);
+        
+    
+        var popup_552f508c465ad83daada2cd22014666e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfeee8204452908861bea4f88f87c6c6 = $(`<div id="html_bfeee8204452908861bea4f88f87c6c6" style="width: 100.0%; height: 100.0%;">     <b>매장명:</b> 광주아울렛점<br>     <b>주소:</b> 광주광역시 서구  상무대로 633<br>     <b>전화번호:</b> 062-385-5122     </div>`)[0];
+                popup_552f508c465ad83daada2cd22014666e.setContent(html_bfeee8204452908861bea4f88f87c6c6);
+            
+        
+
+        circle_marker_efc09ca6012003ee4b9486c4bec47e83.bindPopup(popup_552f508c465ad83daada2cd22014666e)
+        ;
+
+        
+    
+    
+            circle_marker_efc09ca6012003ee4b9486c4bec47e83.bindTooltip(
+                `<div>
+                     
+    매장명: 광주아울렛점<br>
+    주소: 광주광역시 서구  상무대로 633<br>
+    전화번호: 062-385-5122
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
